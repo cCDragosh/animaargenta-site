@@ -16,13 +16,15 @@
       margin: 0;
       padding-top: 30px;
     }
+
     .titulo {
-      font-size: 1.2rem; /* reducido */
+      font-size: 1.2rem;
       margin-bottom: 20px;
       color: #999;
       text-align: center;
       letter-spacing: 1px;
     }
+
     .contenedor {
       display: flex;
       flex-direction: column;
@@ -30,6 +32,7 @@
       gap: 10px;
       max-width: 90vw;
     }
+
     img {
       max-width: 70vw;
       max-height: 60vh;
@@ -37,12 +40,36 @@
       border-radius: 10px;
       box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
     }
+
     .pie {
       font-size: 0.75rem;
       color: #444;
       text-align: center;
       margin-top: 5px;
       max-width: 80vw;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px 0 10px 0;
+      text-align: center;
+      opacity: 0.4;
+    }
+
+    .iconos a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .iconos img {
+      width: 22px;
+      height: 22px;
+      filter: grayscale(1) brightness(0.8);
+      transition: filter 0.3s;
+    }
+
+    .iconos img:hover {
+      filter: brightness(1.2);
     }
   </style>
 </head>
@@ -55,5 +82,20 @@
       Esta imagen fue preservada y expuesta por Drago — animaargenta.com
     </div>
   </div>
+
+  <footer>
+    <div class="iconos">
+      <a href="https://stellar.expert/explorer/public/account/GDJOJHTYWFRRXD3CEFJ7TRBHHQ7EQYKWU7NOXNICTYJG47A3EALY2SXK
+" target="_blank">
+        <img src="https://cryptologos.cc/logos/stellar-xlm-logo.png?v=026" alt="Stellar">
+      </a>
+      <a href="https://github.com/cCDragosh" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+      </a>
+      <a href="mailto:drago@animaargenta.com">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
