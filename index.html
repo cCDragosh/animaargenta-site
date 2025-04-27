@@ -11,32 +11,49 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      justify-content: start;
+      min-height: 100vh;
       margin: 0;
+      padding-top: 30px;
     }
-    h1 {
-      font-size: 1.8rem;
+    .titulo {
+      font-size: 1.2rem; /* reducido */
       margin-bottom: 20px;
-      color: #aaa;
+      color: #999;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      max-width: 90vw;
     }
     img {
-      max-width: 90vw;
-      max-height: 75vh;
+      max-width: 70vw;
+      max-height: 60vh;
       border: 1px solid #555;
       border-radius: 10px;
       box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
     }
-    footer {
-      margin-top: 15px;
-      font-size: 0.8rem;
+    .pie {
+      font-size: 0.75rem;
       color: #444;
+      text-align: center;
+      margin-top: 5px;
+      max-width: 80vw;
     }
   </style>
 </head>
 <body>
-  <h1>BOLÍVAR 1936 - Anima Argenta</h1>
-  <img src="bolivar1936.png" alt="Bolívar 1936">
-  <footer>Esta imagen fue preservada y expuesta por Drago — animaargenta.com</footer>
+  <div class="titulo">ANIMA ARGENTA</div>
+
+  <div class="contenedor">
+    <img src="bolivar1936.png" alt="Bolívar 1936">
+    <div class="pie">
+      Esta imagen fue preservada y expuesta por Drago — animaargenta.com
+    </div>
+  </div>
 </body>
 </html>
