@@ -23,7 +23,6 @@
     }
 
     img {
-      width: 300px;
       max-width: 90%;
       border-radius: 12px;
       margin-bottom: 20px;
@@ -39,11 +38,29 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .nft-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .nft-gallery img {
+      width: 200px;
+    }
   </style>
 </head>
 <body>
   <h1>Anima Argenta Vault</h1>
+
   <img src="bolivar1936.jpg" alt="Bolívar 1936" />
+
+  <div class="nft-gallery">
+    <img src="nfts/bolivar1936.png" alt="NFT Bolívar 1936" />
+  </div>
+
   <a href="nfts/">Ver NFTs</a>
 </body>
 </html>
