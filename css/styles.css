@@ -41,7 +41,7 @@ body {
   transition: transform 0.8s;
 }
 
-.flip-container:hover .flip-inner {
+.flip-inner {
   transform: rotateY(180deg);
 }
 
