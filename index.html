@@ -7,15 +7,6 @@
   <meta name="description" content="Anima Argenta es el proyecto de Drago, donde preserva y expone piezas únicas con ayuda de Kael. Descubre símbolos, memoria y valor reunidos en este espacio.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-  <script src="js/scripts.js"></script>
-  <script>
-  const flipContainer = document.querySelector('.flip-container');
-  const flipInner = document.querySelector('.flip-inner');
-
-  flipContainer.addEventListener('click', () => {
-    flipInner.classList.toggle('rotated');
-  });
-</script>
 <body>
   <header class="titulo">ANIMA ARGENTA</header>
 
@@ -23,7 +14,9 @@
     <div class="flip-container">
       <div class="flip-inner">
         <div class="flip-front">
-          <img src="nfts/bolivar1936-front.png" alt="Imagen frente de la moneda Bolívar 1936">
+          <a href="https://stellar.expert/explorer/public/asset/BOLIVAR1936-GDJOJHTYWFRRXD3CEFJ7TRBHHQ7EQYKWU7NOXNICTYJG47A3EALY2SXK" target="_blank">
+            <img src="nfts/bolivar1936-front.png" alt="Imagen frente de la moneda Bolívar 1936">
+          </a>
         </div>
         <div class="flip-back">
           <img src="nfts/bolivar1936-back.png" alt="Imagen reverso de la moneda Bolívar 1936">
@@ -49,5 +42,7 @@
       </a>
     </div>
   </footer>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>
