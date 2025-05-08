@@ -31,6 +31,7 @@ body {
   perspective: 1000px;
   width: 90vw;
   max-width: 400px;
+  cursor: pointer;
 }
 
 .flip-inner {
@@ -41,7 +42,7 @@ body {
   transition: transform 0.8s;
 }
 
-.flip-inner {
+.flip-inner.rotated {
   transform: rotateY(180deg);
 }
 
