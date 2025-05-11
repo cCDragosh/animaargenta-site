@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería NFT – Anima Argenta</title>
+  <link rel="stylesheet" href="//css/styles.css">
+  <style>
+    body {
+      background-color: #111;
+      color: #ccc;
+      font-family: monospace;
+      padding: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #222;
+      border: 1px solid #333;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    a {
+      color: #ccc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galería NFT</h1>
+  <div id="gallery" class="grid"></div>
+
+  <script>
+    fetch('../../data/nfts.json')
+      .then(response => response.json())
+      .then(data => {
+        const gallery = document.getElementById('gallery');
+        data.forEach(nft => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <a href="../nfts/${nft.id}/">
+              <img src="../nfts/${nft.id}/front.png" alt="${nft.title}">
+              <p>${nft.title}</p>
+            </a>
+          `;
+          gallery.appendChild(card);
+        });
+      });
+  </script>
+</body>
+</html>

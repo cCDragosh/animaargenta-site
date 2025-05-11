@@ -1,0 +1,123 @@
+body {
+  background-color: #111;
+  color: #ccc;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #999;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 90vw;
+}
+
+.flip-container {
+  perspective: 1000px;
+  width: 90vw;
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* mantiene proporción cuadrada */
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.flip-inner.rotated {
+  transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.flip-front img, .flip-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #555;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+  cursor: zoom-in;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+.pie {
+  font-size: 0.75rem;
+  color: #444;
+  text-align: center;
+  margin-top: 5px;
+  max-width: 80vw;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px 0 10px 0;
+  text-align: center;
+  opacity: 0.4;
+}
+
+.iconos a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.iconos img {
+  width: 22px;
+  height: 22px;
+  filter: grayscale(1) brightness(0.8);
+  transition: filter 0.3s;
+}
+
+.iconos img:hover {
+  filter: brightness(1.2);
+}
+.enlace-nft {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.enlace-nft a {
+  font-size: 0.8rem;
+  color: #888;
+  text-decoration: none;
+  border: 1px solid #555;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.enlace-nft a:hover {
+  color: #ccc;
+  border-color: #888;
+  background-color: #222;
+}
