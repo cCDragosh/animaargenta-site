@@ -1,0 +1,17 @@
+VERSION = "2.0.0"
+
+[[CURRENCIES]]
+code = "COPIAITALICUM1918"
+issuer = "GBMIWNRSWPKBHUVSJTEW2JQUZBZZUK4B6APCBNGFOGYHMCHKTWXWAWBI"
+name = "COPIA ITALICUM 1918"
+desc = "Aunque no es original, esta pieza fue elegida.  
+No por su valor, sino por su símbolo.  
+Una copia encontrada en un mercatino…  
+pero cargada con intención y mirada.
+
+Hoy no representa un imperio,  
+sino un recuerdo hecho NFT.  
+Único. Inmutable. AnimaArgenta Vault."
+image = "https://animaargenta.com/nfts/ITALICUM1918/img/compuesta.png"
+is_unlimited = false
+is_asset_anchored = false
