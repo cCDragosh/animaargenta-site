@@ -1,5 +1,8 @@
 document.querySelectorAll('.flip-container').forEach(container => {
+  const inner = container.querySelector('.flip-inner');
+  if (!inner) return;
+
   container.addEventListener('click', () => {
-    container.querySelector('.flip-inner').classList.toggle('rotated');
+    inner.classList.toggle('rotated');
   });
 });
