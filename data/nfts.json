@@ -1,12 +1,12 @@
 [
   {
     "id": "bolivar1936",
-    "title": "Bol\u00edvar 1936",
-    "image": "public/nfts/bolivar1936/front.png"
+    "title": "Bolívar 1936",
+    "image": "../nfts/bolivar1936/front.png"
   },
   {
     "id": "copiaiatalicum1918",
     "title": "Copia Italicum 1918",
-    "image": "public/nfts/copiaiatalicum1918/front.png"
+    "image": "../nfts/copiaiatalicum1918/front.png"
   }
 ]
