@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,28 +13,76 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 25px;
     }
     .card {
       background: #222;
       border: 1px solid #333;
-      padding: 10px;
       border-radius: 10px;
+      padding: 10px;
       text-align: center;
     }
-    .card img {
-      max-width: 100%;
-      border-radius: 5px;
+    .flip-container {
+      perspective: 1000px;
+      width: 100%;
+      cursor: pointer;
     }
-    a {
+    .flip-inner {
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.8s;
+    }
+    .flip-container:hover .flip-inner {
+      transform: rotateY(180deg);
+    }
+    .flip-front, .flip-back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 8px;
+    }
+    .flip-front img, .flip-back img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #555;
+    }
+    .flip-back {
+      transform: rotateY(180deg);
+    }
+    .titulo {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: #aaa;
+    }
+    .boton {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 6px 12px;
+      background: #222;
+      border: 1px solid #555;
+      border-radius: 8px;
+      font-size: 0.8rem;
       color: #ccc;
       text-decoration: none;
+      transition: all 0.3s;
+    }
+    .boton:hover {
+      background: #333;
+      color: #eee;
+      border-color: #aaa;
     }
   </style>
 </head>
 <body>
-  <h1>Galería NFT</h1>
+  <h1 class="titulo">Galería NFT</h1>
   <div id="gallery" class="grid"></div>
 
   <script>
@@ -47,10 +94,18 @@
           const card = document.createElement('div');
           card.className = 'card';
           card.innerHTML = `
-            <a href="../nfts/${nft.id}/">
-              <img src="../nfts/${nft.id}/front.png" alt="${nft.title}">
-              <p>${nft.title}</p>
-            </a>
+            <div class="flip-container">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <img src="../nfts/${nft.id}/front.png" alt="${nft.title}">
+                </div>
+                <div class="flip-back">
+                  <img src="../nfts/${nft.id}/back.png" alt="${nft.title}">
+                </div>
+              </div>
+            </div>
+            <div class="titulo">${nft.title}</div>
+            <a class="boton" href="../nfts/${nft.id}/">📜 Ver la historia</a>
           `;
           gallery.appendChild(card);
         });
