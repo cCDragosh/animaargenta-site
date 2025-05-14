@@ -79,9 +79,31 @@
       color: #eee;
       border-color: #aaa;
     }
+    .back {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+    }
+    .back:hover {
+      color: #aaa;
+    }
+    .back-icon {
+      margin-right: 5px;
+      font-size: 1.5rem;
+    }
   </style>
 </head>
 <body>
+  <!-- Flecha para volver a la página principal -->
+  <a href="../" class="back">
+    <span class="back-icon">←</span> Volver
+  </a>
   <h1 class="titulo">Galería NFT</h1>
   <div id="gallery" class="grid"></div>
 
