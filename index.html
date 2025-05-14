@@ -11,6 +11,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column; /* Para apilar los elementos verticalmente */
       min-height: 100vh;
     }
     .entrada-galeria {
@@ -23,12 +24,26 @@
       transform: scale(1.05);
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     }
+    .texto-subtitulo {
+      margin-top: 10px;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    h1 {
+      color: white;
+      font-family: Arial, sans-serif;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
+  <h1>Anima Argenta</h1> <!-- Título principal en la parte superior -->
   <a href="gallery/" onclick="document.getElementById('sonido-moneda').play()">
     <img class="entrada-galeria" src="nfts/bolivar1936/front.png" alt="Entrar a la Galería">
   </a>
+  <div class="texto-subtitulo">NFTs Gallery</div> <!-- Subtítulo debajo de la imagen -->
   <audio id="sonido-moneda" src="moneda.mp3" preload="auto"></audio>
 </body>
 </html>
