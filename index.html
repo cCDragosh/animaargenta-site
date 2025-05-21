@@ -3,6 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Anima Argenta</title>
+  <link rel="icon" type="image/x-icon" href="favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-drago-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-drago-512x512.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="NFTs Gallery by Anima Argenta.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
       background-color: #111;
@@ -11,19 +22,22 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column; /* Para apilar los elementos verticalmente */
+      flex-direction: column;
       min-height: 100vh;
     }
+
     .entrada-galeria {
       width: 300px;
       cursor: pointer;
       border-radius: 12px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .entrada-galeria:hover {
       transform: scale(1.05);
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     }
+
     .texto-subtitulo {
       margin-top: 10px;
       color: white;
@@ -31,20 +45,21 @@
       text-align: center;
       font-size: 1.5rem;
     }
+
     h1 {
       color: white;
       font-family: Arial, sans-serif;
-      margin-bottom: 150px; /* Aumenta la distancia del título a la imagen */
-      font-size: 4rem; /* Tamaño 4 veces más grande */
+      margin-bottom: 150px;
+      font-size: 4rem;
     }
   </style>
 </head>
 <body>
-  <h1>Anima Argenta</h1> <!-- Título principal aumentado y más arriba -->
+  <h1>Anima Argenta</h1>
   <a href="gallery/" onclick="document.getElementById('sonido-moneda').play()">
     <img class="entrada-galeria" src="nfts/bolivar1936/front.png" alt="Entrar a la Galería">
   </a>
-  <div class="texto-subtitulo">NFTs Gallery</div> <!-- Subtítulo debajo de la imagen -->
+  <div class="texto-subtitulo">NFTs Gallery</div>
   <audio id="sonido-moneda" src="moneda.mp3" preload="auto"></audio>
 </body>
 </html>
