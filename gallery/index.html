@@ -1,148 +1,106 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Galería NFT – Anima Argenta</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <style>
-    body {
-      background-color: #111;
-      color: #ccc;
-      font-family: monospace;
-      padding: 30px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 25px;
-    }
-    .card {
-      background: #222;
-      border: 1px solid #333;
-      border-radius: 10px;
-      padding: 10px;
-      text-align: center;
-    }
-    .flip-container {
-      perspective: 1000px;
-      width: 100%;
-      cursor: pointer;
-    }
-    .flip-inner {
-      position: relative;
-      width: 100%;
-      padding-top: 100%;
-      transform-style: preserve-3d;
-      transition: transform 0.8s;
-    }
-    .flip-inner.rotated {
-      transform: rotateY(180deg);
-    }
-    .flip-front, .flip-back {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 8px;
-    }
-    .flip-front img, .flip-back img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 1px solid #555;
-    }
-    .flip-back {
-      transform: rotateY(180deg);
-    }
-    .titulo {
-      margin: 10px 0;
-      font-size: 1rem;
-      color: #aaa;
-    }
-    .boton {
-      margin-top: 10px;
-      display: inline-block;
-      padding: 6px 12px;
-      background: #222;
-      border: 1px solid #555;
-      border-radius: 8px;
-      font-size: 0.8rem;
-      color: #ccc;
-      text-decoration: none;
-      transition: all 0.3s;
-    }
-    .boton:hover {
-      background: #333;
-      color: #eee;
-      border-color: #aaa;
-    }
-    .back {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      color: white;
-      text-decoration: none;
-      font-size: 1.5rem;
-      font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-    }
-    .back:hover {
-      color: #aaa;
-    }
-    .back-icon {
-      margin-right: 5px;
-      font-size: 1.5rem;
-    }
-  </style>
-</head>
-<body>
-  <!-- Flecha para volver a la página principal -->
-  <a href="../" class="back">
-    <span class="back-icon">←</span> Volver
-  </a>
-  <h1 class="titulo">Galería NFT</h1>
-  <div id="gallery" class="grid"></div>
+body {
+  background-color: #111;
+  color: #ccc;
+  font-family: monospace;
+  padding: 30px;
+}
 
-  <script>
-    fetch('../data/nfts.json')
-      .then(response => response.json())
-      .then(data => {
-        const gallery = document.getElementById('gallery');
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
 
-        data.forEach(nft => {
-          const card = document.createElement('div');
-          card.className = 'card';
+.card {
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
 
-          card.innerHTML = `
-            <div class="flip-container">
-              <div class="flip-inner">
-                <div class="flip-front">
-                  <img src="../nfts/${nft.id}/front.png" alt="${nft.title}">
-                </div>
-                <div class="flip-back">
-                  <img src="../nfts/${nft.id}/back.png" alt="${nft.title}">
-                </div>
-              </div>
-            </div>
-            <div class="titulo">${nft.title}</div>
-            <a class="boton" href="../nfts/${nft.id}/">📜 Ver la historia</a>
-          `;
+.flip-container {
+  perspective: 1000px;
+  width: 100%;
+  cursor: pointer;
+}
 
-          gallery.appendChild(card);
-        });
+.flip-inner {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
 
-        // ✅ Ahora sí: los elementos ya están en el DOM, activamos el flip
-        document.querySelectorAll('.flip-container').forEach(container => {
-          container.addEventListener('click', () => {
-            const inner = container.querySelector('.flip-inner');
-            inner.classList.toggle('rotated');
-          });
-        });
-      });
-  </script>
-</body>
-</html>
+.flip-inner.rotated {
+  transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+}
+
+.flip-front img, .flip-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #555;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+.titulo {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.boton {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 6px 12px;
+  background: #222;
+  border: 1px solid #555;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.boton:hover {
+  background: #333;
+  color: #eee;
+  border-color: #aaa;
+}
+
+.back {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.back:hover {
+  color: #aaa;
+}
+
+.back-icon {
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
