@@ -37,7 +37,7 @@
     },
     {
       "src": "favicons/dragon-nfts-gallery/favicon.ico",
-      "sizes": "48x48",
+      "sizes": "any",
       "type": "image/x-icon"
     }
   ]
