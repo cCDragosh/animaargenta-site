@@ -10,30 +10,35 @@
   "lang": "es",
   "icons": [
     {
-      "src": "favicons/192x192.png/dragon-nfts-gallery.png",
+      "src": "favicons/192x192/dragon-nfts-gallery.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "favicons/512x512.png/dragon-nfts-gallery.png",
+      "src": "favicons/512x512/dragon-nfts-gallery.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "favicons/apple-touch-icon.png/dragon-nfts-gallery.png",
+      "src": "favicons/dragon-nfts-gallery/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "favicons/32x32.png/dragon-nfts-gallery.png",
+      "src": "favicons/32x32/dragon-nfts-gallery.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "favicons/16x16.png/dragon-nfts-gallery.png",
+      "src": "favicons/16x16/dragon-nfts-gallery.png",
       "sizes": "16x16",
       "type": "image/png"
+    },
+    {
+      "src": "favicons/dragon-nfts-gallery/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
     }
   ]
 }
