@@ -2,11 +2,6 @@ body {
   background-color: #111;
   color: #ccc;
   font-family: 'Courier New', monospace;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  min-height: 100vh;
   margin: 0;
   padding-top: 30px;
   line-height: 1.6;
@@ -15,27 +10,6 @@ body {
 .titulo {
   font-size: 1.7rem;
   margin-bottom: 25px;
-  color: #ddd;
-  text-align: center;
-  letter-spacing: 1.2px;
-}
-body {
-  background-color: #111;
-  color: #ccc;
-  font-family: 'Courier New', monospace;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  min-height: 100vh;
-  margin: 0;
-  padding-top: 30px;
-  line-height: 1.6;
-}
-
-.titulo {
-  font-size: 1.7rem;
-  margin-bottom: 10px;
   color: #ddd;
   text-align: center;
   letter-spacing: 1.2px;
@@ -70,63 +44,6 @@ body {
   max-width: 92vw;
 }
 
-.flip-container {
-  perspective: 1000px;
-  width: 100%;
-  max-width: 420px;
-  cursor: pointer;
-}
-
-.flip-inner {
-  position: relative;
-  width: 100%;
-  padding-top: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
-}
-
-.flip-inner.rotated {
-  transform: rotateY(180deg);
-}
-
-.flip-front, .flip-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.flip-front img, .flip-back img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 1px solid #555;
-  border-radius: 12px;
-  box-shadow: 0 0 14px rgba(255, 255, 255, 0.15);
-  cursor: zoom-in;
-  transition: transform 0.3s ease;
-}
-
-.flip-front img:hover, .flip-back img:hover {
-  transform: scale(1.03);
-}
-
-.flip-back {
-  transform: rotateY(180deg);
-}
-
-.pie {
-  font-size: 0.8rem;
-  color: #555;
-  text-align: center;
-  margin-top: 6px;
-  max-width: 85vw;
-}
-
 footer {
   margin-top: auto;
   padding: 22px 0 12px 0;
@@ -150,26 +67,4 @@ footer {
 
 .iconos img:hover {
   filter: brightness(1.4);
-}
-
-.enlace-nft {
-  margin-top: 12px;
-  text-align: center;
-}
-
-.enlace-nft a {
-  font-size: 0.85rem;
-  color: #bbb;
-  text-decoration: none;
-  border: 1px solid #555;
-  padding: 6px 14px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.enlace-nft a:hover {
-  color: #eee;
-  border-color: #888;
-  background-color: #222;
 }
