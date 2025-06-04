@@ -68,6 +68,7 @@
       transform: scale(1.04);
     }
 
+    /* Este subtítulo ahora se centrará debajo de la imagen */
     .texto-subtitulo {
       margin-top: 10px;
       color: white;
@@ -88,18 +89,17 @@
   <h1>Anima Argenta</h1>
 
   <div class="main-row">
-    <!-- Mejora de accesibilidad: aria-label y alt personalizado -->
-    <a href="gallery/" onclick="document.getElementById('sonido-moneda').play()" aria-label="Entrar a la galería NFT">
-      <img class="entrada-galeria" src="nfts/bolivar1936/front.png" alt="Bolívar 1936 NFT - Entrar a la Galería">
-    </a>
-
-    <!-- Botón comunity, semánticamente inactivo si no hay destino -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <a href="gallery/" onclick="document.getElementById('sonido-moneda').play()" aria-label="Entrar a la galería NFT">
+        <img class="entrada-galeria" src="nfts/bolivar1936/front.png" alt="Bolívar 1936 NFT - Entrar a la Galería">
+      </a>
+      <div class="texto-subtitulo">NFTs Gallery</div>
+    </div>
     <a href="#" class="boton-comunity" onclick="return false;" aria-label="Comunidad">comunity</a>
   </div>
 
-  <div class="texto-subtitulo">NFTs Gallery</div>
+  <!-- El subtítulo ya está bajo la imagen, así que se elimina de aquí -->
 
-  <!-- Mejora para audio en móviles: playsinline -->
   <audio id="sonido-moneda" src="moneda.mp3" preload="auto" playsinline></audio>
 </body>
 </html>
