@@ -14,7 +14,6 @@
   <link rel="manifest" href="favicons/site.webmanifest">
   <meta name="theme-color" content="#111111">
   <meta name="description" content="NFTs Gallery by Anima Argenta.">
-<meta name="description" content="Este es el sitio donde Drago convierte metal en memoria y lo intangible en símbolo, con ayuda de Kael.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
@@ -29,8 +28,17 @@
       min-height: 100vh;
     }
 
+    .main-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 16px;
+    }
+
     .entrada-galeria {
       width: 300px;
+      max-width: 100%; /* Responsive para pantallas pequeñas */
       cursor: pointer;
       border-radius: 12px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -39,6 +47,25 @@
     .entrada-galeria:hover {
       transform: scale(1.05);
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .boton-comunity {
+      padding: 12px 32px;
+      border-radius: 8px;
+      background: #222;
+      color: #fff;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      transition: background 0.2s, transform 0.2s;
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 0;
+    }
+    .boton-comunity:hover {
+      background: #444;
+      transform: scale(1.04);
     }
 
     .texto-subtitulo {
@@ -60,12 +87,19 @@
 <body>
   <h1>Anima Argenta</h1>
 
-  <a href="gallery/" onclick="document.getElementById('sonido-moneda').play()">
-    <img class="entrada-galeria" src="nfts/bolivar1936/front.png" alt="Entrar a la Galería">
-  </a>
+  <div class="main-row">
+    <!-- Mejora de accesibilidad: aria-label y alt personalizado -->
+    <a href="gallery/" onclick="document.getElementById('sonido-moneda').play()" aria-label="Entrar a la galería NFT">
+      <img class="entrada-galeria" src="nfts/bolivar1936/front.png" alt="Bolívar 1936 NFT - Entrar a la Galería">
+    </a>
+
+    <!-- Botón comunity, semánticamente inactivo si no hay destino -->
+    <a href="#" class="boton-comunity" onclick="return false;" aria-label="Comunidad">comunity</a>
+  </div>
 
   <div class="texto-subtitulo">NFTs Gallery</div>
 
-  <audio id="sonido-moneda" src="moneda.mp3" preload="auto"></audio>
+  <!-- Mejora para audio en móviles: playsinline -->
+  <audio id="sonido-moneda" src="moneda.mp3" preload="auto" playsinline></audio>
 </body>
 </html>
