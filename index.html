@@ -30,45 +30,35 @@
 
     .main-row {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       gap: 32px;
       margin-bottom: 16px;
     }
 
-    .entrada-galeria {
+    .opcion-columna {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .entrada-galeria,
+    .entrada-comunity {
       width: 300px;
-      max-width: 100%; /* Responsive para pantallas pequeñas */
+      max-width: 100%;
       cursor: pointer;
       border-radius: 12px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: block;
     }
 
-    .entrada-galeria:hover {
+    .entrada-galeria:hover,
+    .entrada-comunity:hover {
       transform: scale(1.05);
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     }
 
-    .boton-comunity {
-      padding: 12px 32px;
-      border-radius: 8px;
-      background: #222;
-      color: #fff;
-      font-size: 1.2rem;
-      border: none;
-      cursor: pointer;
-      font-family: Arial, sans-serif;
-      transition: background 0.2s, transform 0.2s;
-      text-decoration: none;
-      display: inline-block;
-      margin-left: 0;
-    }
-    .boton-comunity:hover {
-      background: #444;
-      transform: scale(1.04);
-    }
-
-    /* Este subtítulo ahora se centrará debajo de la imagen */
     .texto-subtitulo {
       margin-top: 10px;
       color: white;
@@ -89,16 +79,18 @@
   <h1>Anima Argenta</h1>
 
   <div class="main-row">
-    <div style="display: flex; flex-direction: column; align-items: center;">
-      <a href="gallery/" onclick="document.getElementById('sonido-moneda').play()" aria-label="Entrar a la galería NFT">
-        <img class="entrada-galeria" src="nfts/bolivar1936/front.png" alt="Bolívar 1936 NFT - Entrar a la Galería">
-      </a>
+    <!-- NFTs Gallery -->
+    <a href="gallery/" class="opcion-columna" onclick="document.getElementById('sonido-moneda').play()" aria-label="Entrar a la galería NFT">
+      <img class="entrada-galeria" src="nfts/bolivar1936/front.png" alt="Bolívar 1936 NFT - Entrar a la Galería">
       <div class="texto-subtitulo">NFTs Gallery</div>
-    </div>
-    <a href="#" class="boton-comunity" onclick="return false;" aria-label="Comunidad">comunity</a>
-  </div>
+    </a>
 
-  <!-- El subtítulo ya está bajo la imagen, así que se elimina de aquí -->
+    <!-- Comunidad -->
+    <a href="#" class="opcion-columna" onclick="return false;" aria-label="Comunidad">
+      <img class="entrada-comunity" src="pictogramas/anima-argenta-community.png" alt="Comunidad Anima Argenta">
+      <div class="texto-subtitulo">comunity</div>
+    </a>
+  </div>
 
   <audio id="sonido-moneda" src="moneda.mp3" preload="auto" playsinline></audio>
 </body>
