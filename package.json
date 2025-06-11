@@ -7,7 +7,8 @@
     "minify:html": "html-minifier index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true -o dist/index.html",
     "build": "npm run build:css && npm run build:js && npm run minify:html",
     "deploy": "gh-pages -d dist",
-    "deploy:full": "npm run build && npm run deploy"
+    "deploy:full": "npm run build && npm run deploy",
+    "full": "npm install && npm run build && npm run deploy:full"
   },
   "devDependencies": {
     "postcss-cli": "^9.0.0",
