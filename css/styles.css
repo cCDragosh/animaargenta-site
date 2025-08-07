@@ -1,0 +1,70 @@
+body {
+  background-color: #111;
+  color: #ccc;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding-top: 30px;
+  line-height: 1.6;
+}
+
+.titulo {
+  font-size: 1.7rem;
+  margin-bottom: 25px;
+  color: #ddd;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  color: #888;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.entrada-galeria {
+  width: 300px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.entrada-galeria:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 92vw;
+}
+
+footer {
+  margin-top: auto;
+  padding: 22px 0 12px 0;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.iconos a {
+  margin: 0 12px;
+  display: inline-block;
+}
+
+.iconos img {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(1) brightness(0.8);
+  transition: filter 0.3s ease;
+}
+
+.iconos img:hover {
+  filter: brightness(1.4);
+}
