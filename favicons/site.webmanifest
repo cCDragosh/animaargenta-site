@@ -1,9 +1,9 @@
 {
   "name": "Anima Argenta",
   "short_name": "AnimaArgenta",
-  "start_url": "/index.html",
+  "start_url": "/",
   "scope": "/",
-  "display": "standalone",
+  "display": "browser",
   "background_color": "#111111",
   "theme_color": "#111111",
   "description": "NFTs Gallery by Anima Argenta.",
