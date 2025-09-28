@@ -3,23 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BOLÍVAR 1936 — Anima Argenta</title>
+  <title>COPIAIATALICUM 1918 — Anima Argenta</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 2rem;
-      background: #f7f7f7;
-      color: #222;
+      background: #111;
+      color: #eee;
     }
     .ficha {
       max-width: 600px;
       margin: auto;
-      background: white;
+      background: #222;
       padding: 2rem;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+    .back-arrow {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      text-decoration: none;
+      color: #fff;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      z-index: 2;
+    }
+    .back-arrow:hover {
+      color: #FFD700;
+    }
+    .back-arrow span {
+      font-size: 1.1rem;
+      margin-left: 0.5rem;
+      letter-spacing: 0.03em;
     }
     .ficha img {
       display: block;
@@ -33,17 +57,20 @@
       font-size: 1.8rem;
       margin-bottom: 0.5rem;
       text-align: center;
+      color: #fff;
     }
     .desc {
       white-space: pre-line;
       margin-bottom: 1.5rem;
       text-align: center;
+      color: #ccc;
     }
     .meta {
       font-size: 0.9rem;
-      background: #f0f0f0;
+      background: #181818;
       padding: 1rem;
       border-radius: 8px;
+      color: #bbb;
     }
     .meta p {
       margin: 0.3rem 0;
@@ -53,6 +80,7 @@
       row-gap: 0.2rem;
     }
     .meta p strong {
+      color: #fff;
       flex: 0 0 auto;
     }
     .meta-value {
@@ -61,12 +89,28 @@
       word-break: break-all;
       overflow-wrap: anywhere;
     }
+    @media (max-width: 700px) {
+      .ficha {
+        padding: 1rem;
+      }
+      .back-arrow {
+        top: 1rem;
+        left: 1rem;
+        font-size: 1.6rem;
+      }
+      .back-arrow span {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="ficha">
-    <img src="front.png" alt="BOLÍVAR 1936" />
-    <h1>BOLÍVAR 1936</h1>
+    <a href="javascript:history.back()" class="back-arrow" aria-label="Volver atrás">
+      &#8592;<span>Volver</span>
+    </a>
+    <img src="front.png" alt="COPIAIATALICUM 1918" />
+    <h1>COPIAIATALICUM 1918</h1>
     <div class="desc">
       Esta pieza fue tokenizada por un humano llamado Drago.
       Un buscador de significado que convirtió el metal en memoria,
@@ -74,7 +118,7 @@
       No buscaba fama… buscaba verdad.
     </div>
     <div class="meta">
-      <p><strong>Código:</strong><span class="meta-value">BOLIVAR1936</span></p>
+      <p><strong>Código:</strong><span class="meta-value">COPIAIATALICUM1918</span></p>
       <p><strong>Emisor:</strong><span class="meta-value">GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ</span></p>
       <p><strong>Condiciones:</strong><span class="meta-value">NFT único. Emisión bloqueada. No reemitible.</span></p>
       <p><strong>Origen:</strong><span class="meta-value">Mercatino di Verona</span></p>
