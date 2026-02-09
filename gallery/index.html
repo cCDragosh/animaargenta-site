@@ -37,19 +37,20 @@
           card.className = 'card';
 
           card.innerHTML = `
-            <div class="flip-container">
-              <div class="flip-inner">
-                <div class="flip-front">
-                  <img src="../nfts/${nft.id}/front.png" alt="${nft.title}">
-                </div>
-                <div class="flip-back">
-                  <img src="../nfts/${nft.id}/back.png" alt="${nft.title}">
-                </div>
-              </div>
-            </div>
-            <div class="titulo">${nft.title}</div>
-            <a class="boton" href="../nfts/${nft.id}/">📜 Ver la historia</a>
-          `;
+  <div class="flip-container">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="${nft.front}" alt="${nft.title}">
+      </div>
+      <div class="flip-back">
+        <img src="${nft.back}" alt="${nft.title}">
+      </div>
+    </div>
+  </div>
+  <div class="titulo">${nft.title}</div>
+  <a class="boton" href="../nfts/${nft.id}/">📜 Ver la historia</a>
+`;
+
 
           gallery.appendChild(card);
         });
