@@ -3,9 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>BOLÍVAR 1936 — Anima Argenta</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+  >
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: #111;
+    }
+
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
@@ -13,118 +27,226 @@
       background: #111;
       color: #eee;
     }
+
     .ficha {
+      width: 100%;
       max-width: 600px;
-      margin: auto;
-      background: #222;
+      margin: 0 auto;
       padding: 2rem;
+
+      background: #222;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
       position: relative;
+      overflow: hidden;
     }
+
     .back-arrow {
       position: absolute;
       top: 1.5rem;
       left: 1.5rem;
-      text-decoration: none;
+      z-index: 2;
+
+      display: flex;
+      align-items: center;
+
       color: #fff;
       font-size: 2rem;
+      text-decoration: none;
+
       background: none;
       border: none;
       cursor: pointer;
+
       transition: color 0.2s;
-      display: flex;
-      align-items: center;
-      z-index: 2;
     }
+
     .back-arrow:hover {
-      color: #FFD700;
+      color: #ffd700;
     }
+
     .back-arrow span {
-      font-size: 1.1rem;
       margin-left: 0.5rem;
+      font-size: 1.1rem;
       letter-spacing: 0.03em;
     }
+
     .ficha img {
       display: block;
-      margin-left: auto;
-      margin-right: auto;
+
+      width: 100%;
       max-width: 100%;
+      height: auto;
+
+      margin: 0 auto 1rem;
+
       border-radius: 8px;
-      margin-bottom: 1rem;
     }
+
     h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
-      text-align: center;
+      margin: 0 0 0.5rem;
+
       color: #fff;
-    }
-    .desc {
-      white-space: pre-line;
-      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
       text-align: center;
+    }
+
+    .desc {
+      margin-bottom: 1.5rem;
+
       color: #ccc;
+      text-align: center;
+      white-space: pre-line;
+      line-height: 1.45;
     }
+
     .meta {
-      font-size: 0.9rem;
-      background: #181818;
+      width: 100%;
+      min-width: 0;
       padding: 1rem;
-      border-radius: 8px;
+
       color: #bbb;
+      font-size: 0.9rem;
+
+      background: #181818;
+      border-radius: 8px;
+
+      overflow: hidden;
     }
+
     .meta p {
-      margin: 0.3rem 0;
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: max-content minmax(0, 1fr);
       column-gap: 0.4rem;
-      row-gap: 0.2rem;
+
+      width: 100%;
+      min-width: 0;
+      margin: 0.3rem 0;
     }
+
     .meta p strong {
       color: #fff;
-      flex: 0 0 auto;
     }
+
     .meta-value {
-      flex: 1 1 auto;
       min-width: 0;
+      max-width: 100%;
+
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    /* La dirección Stellar puede partirse en cualquier punto */
+    .issuer {
       word-break: break-all;
       overflow-wrap: anywhere;
     }
+
     @media (max-width: 700px) {
-      .ficha {
-        padding: 1rem;
+      html,
+      body {
+        width: 100%;
+        min-height: 100%;
       }
+
+      body {
+        padding: 0;
+      }
+
+      .ficha {
+        width: 100%;
+        max-width: none;
+        min-height: 100vh;
+        min-height: 100svh;
+
+        margin: 0;
+        padding: 1rem;
+
+        border-radius: 0;
+        box-shadow: none;
+      }
+
       .back-arrow {
         top: 1rem;
         left: 1rem;
         font-size: 1.6rem;
       }
+
       .back-arrow span {
         font-size: 1rem;
       }
     }
+
+    @media (max-width: 380px) {
+      .meta p {
+        grid-template-columns: 1fr;
+        row-gap: 0.15rem;
+      }
+
+      .meta-value {
+        display: block;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div class="ficha">
-    <a href="javascript:history.back()" class="back-arrow" aria-label="Volver atrás">
+  <main class="ficha">
+
+    <a
+      href="javascript:history.back()"
+      class="back-arrow"
+      aria-label="Volver atrás"
+    >
       &#8592;<span>Volver</span>
     </a>
+
     <img src="front.png" alt="BOLÍVAR 1936" />
+
     <h1>BOLÍVAR 1936</h1>
+
     <div class="desc">
       Esta pieza fue tokenizada por un humano llamado Drago.
       Un buscador de significado que convirtió el metal en memoria,
       y lo intangible en símbolo.
       No buscaba fama… buscaba verdad.
     </div>
+
     <div class="meta">
-      <p><strong>Código:</strong><span class="meta-value">BOLIVAR1936</span></p>
-      <p><strong>Emisor:</strong><span class="meta-value">GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ</span></p>
-      <p><strong>Condiciones:</strong><span class="meta-value">NFT único. Emisión bloqueada. No reemitible.</span></p>
-      <p><strong>Origen:</strong><span class="meta-value">Mercatino di Verona</span></p>
-      <p><strong>Fecha de hallazgo:</strong><span class="meta-value">2024-12-12</span></p>
-      <p><strong>Estado:</strong><span class="meta-value">Desgastada, pero completa</span></p>
+      <p>
+        <strong>Código:</strong>
+        <span class="meta-value">BOLIVAR1936</span>
+      </p>
+
+      <p>
+        <strong>Emisor:</strong>
+        <span class="meta-value issuer">GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ</span>
+      </p>
+
+      <p>
+        <strong>Condiciones:</strong>
+        <span class="meta-value">
+          NFT único. Emisión bloqueada. No reemitible.
+        </span>
+      </p>
+
+      <p>
+        <strong>Origen:</strong>
+        <span class="meta-value">Mercatino di Verona</span>
+      </p>
+
+      <p>
+        <strong>Fecha de hallazgo:</strong>
+        <span class="meta-value">2024-12-12</span>
+      </p>
+
+      <p>
+        <strong>Estado:</strong>
+        <span class="meta-value">Desgastada, pero completa</span>
+      </p>
     </div>
-  </div>
+
+  </main>
 </body>
 </html>
