@@ -27,7 +27,7 @@
   <div id="gallery" class="grid"></div>
 
   <script>
-    fetch('../data/nfts.json')
+    fetch('../data/nfts.json', { cache: 'no-store' })
       .then(response => response.json())
       .then(data => {
         const gallery = document.getElementById('gallery');
