@@ -16,5 +16,17 @@
     "title": "El mito en marcha",
     "front": "../nfts/aa-1936-01/front.jpg",
     "back": "../nfts/aa-1936-01/back.jpg"
+  },
+  {
+    "id": "aa-1980-01",
+    "title": "Bajo el escudo",
+    "front": "../nfts/aa-1980-01/front.jpg",
+    "back": "../nfts/aa-1980-01/back.jpg"
+  },
+  {
+    "id": "aa-1965-01",
+    "title": "Los tres reinos",
+    "front": "../nfts/aa-1965-01/front.jpg",
+    "back": "../nfts/aa-1965-01/back.jpg"
   }
 ]
