@@ -5,13 +5,16 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
     - name: Clonar el repo
@@ -28,8 +31,14 @@ jobs:
     - name: Crear build
       run: npm run build
 
-    - name: Subir a GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Configurar GitHub Pages
+      uses: actions/configure-pages@v5
+
+    - name: Preparar artefacto de GitHub Pages
+      uses: actions/upload-pages-artifact@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+        path: ./dist
+
+    - name: Publicar en GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
