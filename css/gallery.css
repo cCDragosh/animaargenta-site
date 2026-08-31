@@ -15,7 +15,7 @@ body {
   background: #222;
   border: 1px solid #333;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 10px 52px;
   text-align: center;
   position: relative; /* Añadido para posicionar elementos dentro de la carta */
 }
@@ -58,29 +58,6 @@ body {
 
 .flip-back {
   transform: rotateY(180deg);
-  display: flex; /* Asegura que el contenido se alinee correctamente */
-  flex-direction: column; /* Alinea el contenido en columna */
-  justify-content: center; /* Centra el contenido verticalmente */
-  align-items: center; /* Centra el contenido horizontalmente */
-  padding: 20px; /* Espacio interno para evitar que el texto toque los bordes */
-  box-sizing: border-box; /* Incluye el padding en el tamaño total */
-  overflow-y: auto; /* Permite scroll si el contenido es demasiado largo */
-  height: 100%; /* Asegura que la parte trasera ocupe todo el espacio disponible */
-}
-
-.flip-back p {
-  margin: 0;
-  font-size: 0.9rem; /* Ajusta el tamaño del texto */
-  color: #ccc;
-  text-align: center; /* Centra el texto */
-  word-wrap: break-word; /* Ajusta el texto largo dentro del contenedor */
-}
-
-.flip-back img {
-  max-width: 100%;
-  max-height: 50%; /* Limita el tamaño de la imagen */
-  margin-bottom: 10px; /* Espacio entre la imagen y el texto */
-  object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor */
 }
 
 .titulo {
