@@ -95,6 +95,18 @@ image = "https://animaargenta.com/nfts/aa-1807-01/front.jpg"
 is_asset_anchored = false
 display_decimals = 0
 
+[[CURRENCIES]]
+code = "ITALICUM1918"
+issuer = "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ"
+name = "COPIA ITALICUM 1918"
+desc = """Aunque no es original, esta pieza fue elegida.
+No por su valor, sino por su símbolo.
+Una copia encontrada en un mercatino, convertida en memoria digital única."""
+conditions = "NFT único. Emisión prevista: 1 unidad. No se reemitirá."
+image = "https://animaargenta.com/nfts/italicum1918/front.png"
+is_asset_anchored = false
+display_decimals = 0
+
 [DOCUMENTATION]
 ORG_NAME = "Anima Argenta"
 ORG_URL = "https://animaargenta.com"
