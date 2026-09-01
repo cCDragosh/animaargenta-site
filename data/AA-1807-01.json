@@ -1,0 +1,25 @@
+{
+  "id": "AA-1807-01",
+  "asset_code": "AA180701",
+  "issuer": "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ",
+  "name": "Un reino recién nacido",
+  "collection": "Anima Argenta",
+  "denomination": "6 kreuzer",
+  "country": "Baviera",
+  "year": 1807,
+  "description": "Ejemplar físico de 6 kreuzer de Baviera de 1807, reinado de Maximiliano I José. Acuñado en billón de ley 0,333, con un peso oficial de 2,7 g y un diámetro de 21 mm.",
+  "image": "https://animaargenta.com/nfts/aa-1807-01/front.jpg",
+  "image_back": "https://animaargenta.com/nfts/aa-1807-01/back.jpg",
+  "image_edge": "https://animaargenta.com/nfts/aa-1807-01/edge.jpg",
+  "edition": "1/1 (this physical object)",
+  "token_status": "Prepared; pending on-chain verification",
+  "created_by": "Drago",
+  "sealed_by": "Anima Argenta",
+  "tags": [
+    "anima-argenta",
+    "baviera",
+    "billon",
+    "maximiliano-i-jose",
+    "1807"
+  ]
+}

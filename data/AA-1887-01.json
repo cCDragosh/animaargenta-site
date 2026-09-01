@@ -1,0 +1,26 @@
+{
+  "id": "AA-1887-01",
+  "asset_code": "AA188701",
+  "issuer": "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ",
+  "name": "La promesa en el canto",
+  "collection": "Anima Argenta",
+  "denomination": "1 lira",
+  "country": "Italia",
+  "year": 1887,
+  "description": "Ejemplar físico de 1 lira italiana de 1887, reinado de Umberto I, acuñado en Milán en plata de ley 0,835. Peso oficial de 5 g, diámetro de 23 mm y canto inscrito con FERT.",
+  "image": "https://animaargenta.com/nfts/aa-1887-01/front.jpg",
+  "image_back": "https://animaargenta.com/nfts/aa-1887-01/back.jpg",
+  "image_edge": "https://animaargenta.com/nfts/aa-1887-01/edge.jpg",
+  "edition": "1/1 (this physical object)",
+  "token_status": "Prepared; pending on-chain verification",
+  "created_by": "Drago",
+  "sealed_by": "Anima Argenta",
+  "tags": [
+    "anima-argenta",
+    "italia",
+    "plata",
+    "umberto-i",
+    "1887",
+    "milan"
+  ]
+}

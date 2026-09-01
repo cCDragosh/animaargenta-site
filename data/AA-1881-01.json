@@ -1,0 +1,25 @@
+{
+  "id": "AA-1881-01",
+  "asset_code": "AA188101",
+  "issuer": "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ",
+  "name": "Tres veces FERT",
+  "collection": "Anima Argenta",
+  "denomination": "2 lire",
+  "country": "Italia",
+  "year": 1881,
+  "description": "Ejemplar físico de 2 lire italianas de 1881, reinado de Umberto I, acuñado en Roma en plata de ley 0,835. Peso oficial de 10 g, diámetro de 27 mm y canto inscrito con FERT repetido tres veces.",
+  "image": "https://animaargenta.com/nfts/aa-1881-01/front.jpg",
+  "image_back": "https://animaargenta.com/nfts/aa-1881-01/back.jpg",
+  "image_edge": "https://animaargenta.com/nfts/aa-1881-01/edge.jpg",
+  "edition": "1/1 (this physical object)",
+  "token_status": "Prepared; pending on-chain verification",
+  "created_by": "Drago",
+  "sealed_by": "Anima Argenta",
+  "tags": [
+    "anima-argenta",
+    "italia",
+    "plata",
+    "umberto-i",
+    "1881"
+  ]
+}

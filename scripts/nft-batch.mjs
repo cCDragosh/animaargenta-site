@@ -64,6 +64,12 @@ for (const [index, item] of items.entries()) {
     fail(Boolean(item.images?.[side]) && existsSync(source), `${label}: falta la imagen ${side}.`);
     fail(['.jpg', '.jpeg', '.png', '.webp'].includes(extname(source).toLowerCase()), `${label}: formato de imagen ${side} no permitido.`);
   }
+  if (item.images?.edge) {
+    const source = resolve(batchDir, item.images.edge);
+    fail(existsSync(source), `${label}: falta la imagen edge.`);
+    fail(['.jpg', '.jpeg', '.png', '.webp'].includes(extname(source).toLowerCase()), `${label}: formato de imagen edge no permitido.`);
+    fail(typeof item.edge_alt === 'string' && item.edge_alt.trim(), `${label}: falta edge_alt.`);
+  }
   seenCodes.add(item.asset_code);
   seenSlugs.add(item.slug);
 }
@@ -92,6 +98,8 @@ const renderPage = (item) => `<!DOCTYPE html>
     .id { margin: 0 0 1.5rem; color: #888; }
     .faces { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
     .faces img { display: block; width: 100%; height: auto; border: 1px solid #444; border-radius: 10px; }
+    .edge { margin-top: 1rem; }
+    .edge img { display: block; width: 100%; height: auto; border: 1px solid #444; border-radius: 10px; }
     .story { margin: 2rem 0; color: #eee; font: 1.1rem/1.7 Georgia, serif; }
     dl { display: grid; grid-template-columns: max-content 1fr; gap: .65rem 1rem; padding: 1.25rem; background: #191919; border: 1px solid #303030; border-radius: 10px; }
     dt { color: #888; } dd { margin: 0; color: #ddd; }
@@ -108,6 +116,7 @@ const renderPage = (item) => `<!DOCTYPE html>
       <img src="front${extname(item.images.front).toLowerCase()}" alt="${escapeHtml(item.front_alt)}">
       <img src="back${extname(item.images.back).toLowerCase()}" alt="${escapeHtml(item.back_alt)}">
     </div>
+    ${item.images.edge ? `<div class="edge"><img src="edge${extname(item.images.edge).toLowerCase()}" alt="${escapeHtml(item.edge_alt)}"></div>` : ''}
     <p class="story">${escapeHtml(item.story)}</p>
     <dl>
       ${item.facts.map(({ label, value }) => `<dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd>`).join('\n      ')}
@@ -131,6 +140,7 @@ const metadataFor = (item) => ({
   description: item.description,
   image: `https://animaargenta.com/nfts/${item.slug}/front${extname(item.images.front).toLowerCase()}`,
   image_back: `https://animaargenta.com/nfts/${item.slug}/back${extname(item.images.back).toLowerCase()}`,
+  ...(item.images.edge ? { image_edge: `https://animaargenta.com/nfts/${item.slug}/edge${extname(item.images.edge).toLowerCase()}` } : {}),
   edition: '1/1 (this physical object)',
   token_status: 'Prepared; pending on-chain verification',
   created_by: 'Drago',
@@ -147,6 +157,7 @@ for (const item of items) {
   const backExt = extname(item.images.back).toLowerCase();
   copyFileSync(resolve(batchDir, item.images.front), join(pageDir, `front${frontExt}`));
   copyFileSync(resolve(batchDir, item.images.back), join(pageDir, `back${backExt}`));
+  if (item.images.edge) copyFileSync(resolve(batchDir, item.images.edge), join(pageDir, `edge${extname(item.images.edge).toLowerCase()}`));
   writeFileSync(join(pageDir, 'index.html'), renderPage(item));
   mkdirSync(join(outputDir, 'data'), { recursive: true });
   writeFileSync(join(outputDir, 'data', `${item.id}.json`), `${JSON.stringify(metadataFor(item), null, 2)}\n`);
@@ -191,7 +202,9 @@ if (apply) {
   for (const item of items) {
     const targetDir = join(ROOT, 'nfts', item.slug);
     mkdirSync(targetDir, { recursive: true });
-    for (const file of ['index.html', `front${extname(item.images.front).toLowerCase()}`, `back${extname(item.images.back).toLowerCase()}`]) {
+    const assetFiles = ['index.html', `front${extname(item.images.front).toLowerCase()}`, `back${extname(item.images.back).toLowerCase()}`];
+    if (item.images.edge) assetFiles.push(`edge${extname(item.images.edge).toLowerCase()}`);
+    for (const file of assetFiles) {
       copyFileSync(join(outputDir, 'nfts', item.slug, file), join(targetDir, file));
     }
     copyFileSync(join(outputDir, 'data', `${item.id}.json`), join(ROOT, 'data', `${item.id}.json`));

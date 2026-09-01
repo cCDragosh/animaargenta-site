@@ -1,0 +1,25 @@
+{
+  "id": "AA-1944-01",
+  "asset_code": "AA194401",
+  "issuer": "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ",
+  "name": "Nada sin Dios",
+  "collection": "Anima Argenta",
+  "denomination": "500 lei",
+  "country": "Rumanía",
+  "year": 1944,
+  "description": "Ejemplar físico de 500 lei rumanos de 1944, reinado de Mihai I, acuñado en Bucarest en plata de ley 0,700. Peso oficial de 12 g, diámetro de 32 mm y canto inscrito NIHIL SINE DEO.",
+  "image": "https://animaargenta.com/nfts/aa-1944-01/front.jpg",
+  "image_back": "https://animaargenta.com/nfts/aa-1944-01/back.jpg",
+  "image_edge": "https://animaargenta.com/nfts/aa-1944-01/edge.jpg",
+  "edition": "1/1 (this physical object)",
+  "token_status": "Prepared; pending on-chain verification",
+  "created_by": "Drago",
+  "sealed_by": "Anima Argenta",
+  "tags": [
+    "anima-argenta",
+    "rumania",
+    "plata",
+    "mihai-i",
+    "1944"
+  ]
+}

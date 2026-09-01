@@ -1,0 +1,163 @@
+{
+  "batch_id": "lote-plata-01",
+  "approved": true,
+  "issuer": "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ",
+  "receiver": "GDJOJHTYWFRRXD3CEFJ7TRBHHQ7EQYKWU7NOXNICTYJG47A3EALY2SXK",
+  "items": [
+    {
+      "id": "AA-1960-01",
+      "slug": "aa-1960-01",
+      "asset_code": "AA196001",
+      "title": "Dos nombres, una fecha",
+      "country": "Bélgica",
+      "denomination": "50 francos",
+      "year": 1960,
+      "story": "Dos perfiles avanzan en la misma dirección y dos escudos quedan unidos bajo una corona. Bélgica convirtió el matrimonio de Balduino y Fabiola, celebrado el 15 de diciembre de 1960, en una pieza destinada a circular: un acontecimiento íntimo transformado en memoria pública.",
+      "description": "Ejemplar físico de 50 francos belgas de 1960, emisión conmemorativa del matrimonio del rey Balduino y Fabiola de Mora y Aragón. Acuñada en plata de ley 0,835, con un peso oficial de 12,5 g y un diámetro de 30 mm.",
+      "meta_description": "50 francos de Bélgica de 1960: matrimonio de Balduino y Fabiola, preservado como pieza física única por Anima Argenta.",
+      "front_alt": "Balduino y Fabiola en la moneda belga de 50 francos de 1960",
+      "back_alt": "Escudos coronados y valor de 50 francos en la moneda belga de 1960",
+      "edge_alt": "Canto estriado del ejemplar belga de 50 francos de 1960",
+      "facts": [
+        { "label": "Objeto", "value": "Este ejemplar físico concreto" },
+        { "label": "Emisión", "value": "500.000 ejemplares" },
+        { "label": "Metal", "value": "Plata 0,835" },
+        { "label": "Peso oficial", "value": "12,5 g" },
+        { "label": "Diámetro", "value": "30 mm" },
+        { "label": "Ceca", "value": "Real Casa de la Moneda de Bélgica, Bruselas" },
+        { "label": "Diseño", "value": "Carlos Van Dionant" },
+        { "label": "Canto", "value": "Estriado" }
+      ],
+      "images": {
+        "front": "assets/aa-1960-01/front.jpg",
+        "back": "assets/aa-1960-01/back.jpg",
+        "edge": "assets/aa-1960-01/edge.jpg"
+      },
+      "tags": ["anima-argenta", "belgica", "plata", "matrimonio-real", "1960"]
+    },
+    {
+      "id": "AA-1881-01",
+      "slug": "aa-1881-01",
+      "asset_code": "AA188101",
+      "title": "Tres veces FERT",
+      "country": "Italia",
+      "denomination": "2 lire",
+      "year": 1881,
+      "story": "Una corona, un escudo y una palabra repetida tres veces sobre el canto. FERT acompañó durante siglos a la Casa de Saboya; en esta pieza de Umberto I no queda escondida, sino rodeando el metal como una contraseña dinástica.",
+      "description": "Ejemplar físico de 2 lire italianas de 1881, reinado de Umberto I, acuñado en Roma en plata de ley 0,835. Peso oficial de 10 g, diámetro de 27 mm y canto inscrito con FERT repetido tres veces.",
+      "meta_description": "2 lire de Umberto I de 1881, con canto FERT, preservada como pieza física única por Anima Argenta.",
+      "front_alt": "Retrato de Umberto I en la moneda italiana de 2 lire de 1881",
+      "back_alt": "Escudo de Saboya y valor de 2 lire en la moneda italiana de 1881",
+      "edge_alt": "Recorrido fotográfico del canto con la inscripción FERT de las 2 lire de 1881",
+      "facts": [
+        { "label": "Objeto", "value": "Este ejemplar físico concreto" },
+        { "label": "Emisión", "value": "4.140.794 ejemplares" },
+        { "label": "Metal", "value": "Plata 0,835" },
+        { "label": "Peso oficial", "value": "10 g" },
+        { "label": "Diámetro", "value": "27 mm" },
+        { "label": "Ceca", "value": "Roma (R)" },
+        { "label": "Grabador", "value": "Filippo Speranza" },
+        { "label": "Canto", "value": "FERT repetido tres veces, con rosetas y nudos" }
+      ],
+      "images": {
+        "front": "assets/aa-1881-01/front.jpg",
+        "back": "assets/aa-1881-01/back.jpg",
+        "edge": "assets/aa-1881-01/edge.jpg"
+      },
+      "tags": ["anima-argenta", "italia", "plata", "umberto-i", "1881"]
+    },
+    {
+      "id": "AA-1944-01",
+      "slug": "aa-1944-01",
+      "asset_code": "AA194401",
+      "title": "Nada sin Dios",
+      "country": "Rumanía",
+      "denomination": "500 lei",
+      "year": 1944,
+      "story": "En 1944, el rostro joven de Mihai I quedó frente al escudo de una Rumanía atravesada por la guerra. En el canto, tres palabras sostienen la pieza como una declaración: NIHIL SINE DEO, nada sin Dios.",
+      "description": "Ejemplar físico de 500 lei rumanos de 1944, reinado de Mihai I, acuñado en Bucarest en plata de ley 0,700. Peso oficial de 12 g, diámetro de 32 mm y canto inscrito NIHIL SINE DEO.",
+      "meta_description": "500 lei de Mihai I de 1944, con canto NIHIL SINE DEO, preservada como pieza física única por Anima Argenta.",
+      "front_alt": "Retrato del rey Mihai I en la moneda rumana de 500 lei de 1944",
+      "back_alt": "Escudo de Rumanía y valor de 500 lei en la moneda de 1944",
+      "edge_alt": "Recorrido fotográfico del canto NIHIL SINE DEO de los 500 lei de 1944",
+      "facts": [
+        { "label": "Objeto", "value": "Este ejemplar físico concreto" },
+        { "label": "Emisión", "value": "9.731.000 ejemplares" },
+        { "label": "Metal", "value": "Plata 0,700" },
+        { "label": "Peso oficial", "value": "12 g" },
+        { "label": "Diámetro", "value": "32 mm" },
+        { "label": "Ceca", "value": "Monetăria Statului, Bucarest" },
+        { "label": "Grabador", "value": "Haralambie Ionescu" },
+        { "label": "Canto", "value": "NIHIL SINE DEO — Nada sin Dios" }
+      ],
+      "images": {
+        "front": "assets/aa-1944-01/front.jpg",
+        "back": "assets/aa-1944-01/back.jpg",
+        "edge": "assets/aa-1944-01/edge.jpg"
+      },
+      "tags": ["anima-argenta", "rumania", "plata", "mihai-i", "1944"]
+    },
+    {
+      "id": "AA-1887-01",
+      "slug": "aa-1887-01",
+      "asset_code": "AA188701",
+      "title": "La promesa en el canto",
+      "country": "Italia",
+      "denomination": "1 lira",
+      "year": 1887,
+      "story": "Una lira pequeña conserva una declaración que no se muestra de frente. Al girarla aparece FERT, el lema de Saboya: la identidad de una dinastía grabada precisamente en la parte que solo se descubre al sostener la moneda.",
+      "description": "Ejemplar físico de 1 lira italiana de 1887, reinado de Umberto I, acuñado en Milán en plata de ley 0,835. Peso oficial de 5 g, diámetro de 23 mm y canto inscrito con FERT.",
+      "meta_description": "1 lira de Umberto I de 1887 M, con canto FERT, preservada como pieza física única por Anima Argenta.",
+      "front_alt": "Retrato de Umberto I en la moneda italiana de 1 lira de 1887",
+      "back_alt": "Escudo de Saboya y valor de 1 lira en la moneda italiana de 1887",
+      "edge_alt": "Recorrido fotográfico del canto con la inscripción FERT de la lira italiana de 1887",
+      "facts": [
+        { "label": "Objeto", "value": "Este ejemplar físico concreto" },
+        { "label": "Emisión", "value": "16.304.648 ejemplares" },
+        { "label": "Metal", "value": "Plata 0,835" },
+        { "label": "Peso oficial", "value": "5 g" },
+        { "label": "Diámetro", "value": "23 mm" },
+        { "label": "Ceca", "value": "Milán (M)" },
+        { "label": "Grabador", "value": "Filippo Speranza" },
+        { "label": "Canto", "value": "FERT con motivos ornamentales" }
+      ],
+      "images": {
+        "front": "assets/aa-1887-01/front.jpg",
+        "back": "assets/aa-1887-01/back.jpg",
+        "edge": "assets/aa-1887-01/edge.jpg"
+      },
+      "tags": ["anima-argenta", "italia", "plata", "umberto-i", "1887", "milan"]
+    },
+    {
+      "id": "AA-1807-01",
+      "slug": "aa-1807-01",
+      "asset_code": "AA180701",
+      "title": "Un reino recién nacido",
+      "country": "Baviera",
+      "denomination": "6 kreuzer",
+      "year": 1807,
+      "story": "Baviera apenas llevaba un año convertida en reino cuando esta moneda comenzó a circular. El perfil de Maximiliano I José y el escudo coronado fijan en metal aquel cambio de rango: un territorio antiguo estrenando una identidad nueva.",
+      "description": "Ejemplar físico de 6 kreuzer de Baviera de 1807, reinado de Maximiliano I José. Acuñado en billón de ley 0,333, con un peso oficial de 2,7 g y un diámetro de 21 mm.",
+      "meta_description": "6 kreuzer de Baviera de 1807, Maximiliano I José, preservado como pieza física única por Anima Argenta.",
+      "front_alt": "Retrato de Maximiliano I José en los 6 kreuzer de Baviera de 1807",
+      "back_alt": "Escudo coronado de Baviera, valor de 6 kreuzer y fecha 1807",
+      "edge_alt": "Vista lateral del ejemplar bávaro de 6 kreuzer de 1807",
+      "facts": [
+        { "label": "Objeto", "value": "Este ejemplar físico concreto" },
+        { "label": "Emisión", "value": "Tirada no documentada en la referencia consultada" },
+        { "label": "Metal", "value": "Billón, plata 0,333" },
+        { "label": "Peso oficial", "value": "2,7 g" },
+        { "label": "Diámetro", "value": "21 mm" },
+        { "label": "Atribución de ceca", "value": "Múnich; el tipo también fue acuñado en Hall con cuños de Múnich" },
+        { "label": "Catálogo", "value": "KM 686 · AKS 52 · Jaeger 10" },
+        { "label": "Canto del tipo", "value": "Motivo ornamental" }
+      ],
+      "images": {
+        "front": "assets/aa-1807-01/front.jpg",
+        "back": "assets/aa-1807-01/back.jpg",
+        "edge": "assets/aa-1807-01/edge.jpg"
+      },
+      "tags": ["anima-argenta", "baviera", "billon", "maximiliano-i-jose", "1807"]
+    }
+  ]
+}

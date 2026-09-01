@@ -1,0 +1,25 @@
+{
+  "id": "AA-1960-01",
+  "asset_code": "AA196001",
+  "issuer": "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ",
+  "name": "Dos nombres, una fecha",
+  "collection": "Anima Argenta",
+  "denomination": "50 francos",
+  "country": "Bélgica",
+  "year": 1960,
+  "description": "Ejemplar físico de 50 francos belgas de 1960, emisión conmemorativa del matrimonio del rey Balduino y Fabiola de Mora y Aragón. Acuñada en plata de ley 0,835, con un peso oficial de 12,5 g y un diámetro de 30 mm.",
+  "image": "https://animaargenta.com/nfts/aa-1960-01/front.jpg",
+  "image_back": "https://animaargenta.com/nfts/aa-1960-01/back.jpg",
+  "image_edge": "https://animaargenta.com/nfts/aa-1960-01/edge.jpg",
+  "edition": "1/1 (this physical object)",
+  "token_status": "Prepared; pending on-chain verification",
+  "created_by": "Drago",
+  "sealed_by": "Anima Argenta",
+  "tags": [
+    "anima-argenta",
+    "belgica",
+    "plata",
+    "matrimonio-real",
+    "1960"
+  ]
+}
