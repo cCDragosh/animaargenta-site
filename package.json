@@ -2,11 +2,12 @@
   "name": "animaargenta-site",
   "version": "1.0.0",
   "scripts": {
+    "verify:visual": "node scripts/check-visual-contract.mjs",
     "build:css": "postcss css/*.css -d dist/css --no-map --env production",
     "build:js": "rollup js/scripts.js --file dist/js/bundle.js --format iife",
     "minify:html": "html-minifier index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true -o dist/index.html",
     "copy:static": "cp -R data favicons gallery nfts pictogramas .well-known dist/ && cp CNAME robots.txt sitemap.xml .nojekyll dist/",
-    "build": "rm -rf dist && npm run build:css && npm run build:js && npm run minify:html && npm run copy:static",
+    "build": "npm run verify:visual && rm -rf dist && npm run build:css && npm run build:js && npm run minify:html && npm run copy:static",
     "deploy": "gh-pages -d dist",
     "deploy:full": "npm run build && npm run deploy",
     "full": "npm install && npm run build && npm run deploy:full"
