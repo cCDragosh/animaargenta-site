@@ -34,6 +34,8 @@ conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1965-01/front.jpg"
 is_asset_anchored = false
 display_decimals = 0
+fixed_number = 1
+status = "live"
 
 [[CURRENCIES]]
 code = "AA198001"
@@ -44,6 +46,8 @@ conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1980-01/front.jpg"
 is_asset_anchored = false
 display_decimals = 0
+fixed_number = 1
+status = "live"
 
 [[CURRENCIES]]
 code = "AA196001"
