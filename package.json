@@ -2,6 +2,8 @@
   "name": "animaargenta-site",
   "version": "1.0.0",
   "scripts": {
+    "nft:preview": "node scripts/nft-batch.mjs",
+    "nft:apply": "node scripts/nft-batch.mjs --apply",
     "verify:visual": "node scripts/check-visual-contract.mjs",
     "build:css": "postcss css/*.css -d dist/css --no-map --env production",
     "build:js": "rollup js/scripts.js --file dist/js/bundle.js --format iife",
@@ -13,6 +15,7 @@
     "full": "npm install && npm run build && npm run deploy:full"
   },
   "devDependencies": {
+    "@stellar/stellar-sdk": "13.3.0",
     "postcss-cli": "^9.0.0",
     "rollup": "^3.0.0",
     "html-minifier": "^4.0.0",
