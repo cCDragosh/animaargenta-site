@@ -34,11 +34,20 @@ jobs:
     - name: Configurar GitHub Pages
       uses: actions/configure-pages@v5
 
+    - name: Empaquetar sitio incluyendo metadatos Stellar
+      run: |
+        tar --dereference --hard-dereference --directory dist \
+          -cvf "$RUNNER_TEMP/artifact.tar" \
+          --exclude=.git --exclude=.github .
+        tar -tf "$RUNNER_TEMP/artifact.tar" | grep -q './.well-known/stellar.toml'
+
     - name: Preparar artefacto de GitHub Pages
-      uses: actions/upload-pages-artifact@v4
+      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
       with:
-        path: ./dist
-        include-hidden-files: true
+        name: github-pages
+        path: ${{ runner.temp }}/artifact.tar
+        retention-days: 1
+        if-no-files-found: error
 
     - name: Publicar en GitHub Pages
       id: deployment
