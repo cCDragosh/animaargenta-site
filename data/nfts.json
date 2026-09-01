@@ -28,5 +28,35 @@
     "title": "Los tres reinos",
     "front": "../nfts/aa-1965-01/front.jpg",
     "back": "../nfts/aa-1965-01/back.jpg"
+  },
+  {
+    "id": "aa-1960-01",
+    "title": "Dos nombres, una fecha",
+    "front": "../nfts/aa-1960-01/front.jpg",
+    "back": "../nfts/aa-1960-01/back.jpg"
+  },
+  {
+    "id": "aa-1881-01",
+    "title": "Tres veces FERT",
+    "front": "../nfts/aa-1881-01/front.jpg",
+    "back": "../nfts/aa-1881-01/back.jpg"
+  },
+  {
+    "id": "aa-1944-01",
+    "title": "Nada sin Dios",
+    "front": "../nfts/aa-1944-01/front.jpg",
+    "back": "../nfts/aa-1944-01/back.jpg"
+  },
+  {
+    "id": "aa-1887-01",
+    "title": "La promesa en el canto",
+    "front": "../nfts/aa-1887-01/front.jpg",
+    "back": "../nfts/aa-1887-01/back.jpg"
+  },
+  {
+    "id": "aa-1807-01",
+    "title": "Un reino recién nacido",
+    "front": "../nfts/aa-1807-01/front.jpg",
+    "back": "../nfts/aa-1807-01/back.jpg"
   }
 ]

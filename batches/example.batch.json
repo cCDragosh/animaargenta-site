@@ -1,0 +1,32 @@
+{
+  "batch_id": "ejemplo-5-monedas",
+  "approved": false,
+  "issuer": "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ",
+  "receiver": "GDJOJHTYWFRRXD3CEFJ7TRBHHQ7EQYKWU7NOXNICTYJG47A3EALY2SXK",
+  "items": [
+    {
+      "id": "AA-1900-01",
+      "slug": "aa-1900-01",
+      "asset_code": "AA190001",
+      "title": "Título pendiente",
+      "country": "País pendiente",
+      "denomination": "Valor pendiente",
+      "year": 1900,
+      "story": "Historia pendiente de aprobación.",
+      "description": "Descripción numismática pendiente de aprobación.",
+      "meta_description": "Pieza física única preservada por Anima Argenta.",
+      "front_alt": "Anverso de la moneda",
+      "back_alt": "Reverso de la moneda",
+      "facts": [
+        { "label": "Objeto", "value": "Este ejemplar físico concreto" },
+        { "label": "Emisión", "value": "Pendiente de verificar" },
+        { "label": "Metal", "value": "Pendiente de verificar" }
+      ],
+      "images": {
+        "front": "assets/aa-1900-01/front.jpg",
+        "back": "assets/aa-1900-01/back.jpg"
+      },
+      "tags": ["anima-argenta", "coin"]
+    }
+  ]
+}
