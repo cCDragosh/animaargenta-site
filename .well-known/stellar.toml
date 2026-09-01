@@ -16,7 +16,7 @@ status = "live"
 
 [[CURRENCIES]]
 code = "UNIVERSDRAGO"
-issuer = "GDJOJHTYWFRRXD3CEFJ7TRBHHQ7EQYKWU7NOXNICTYJG47A3EALY2SXK"
+issuer = "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ"
 name = "Univers Drago - Acta Fundacional"
 desc = "Primer NFT simbólico de fundación de Univers Drago. Nodo soberano híbrido físico-digital anclado en IPFS y Stellar."
 conditions = "Emitido el 2025-06-15 como NFT fundacional único. Emisión cerrada."
