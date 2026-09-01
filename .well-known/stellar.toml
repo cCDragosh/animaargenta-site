@@ -25,6 +25,26 @@ anchor_asset_type = "NFT"
 documentation = "https://bafybeicbf4kighfgxorcqcua2ib6bdf6j4rtqrtdhyzkum7fzjo5rxqpl4.ipfs.w3s.link"
 policy = "soberano"
 
+[[CURRENCIES]]
+code = "AA196501"
+issuer = "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ"
+name = "Los tres reinos"
+desc = "500 lire de Italia de 1965 dedicada al VII centenario del nacimiento de Dante Alighieri. Una moneda física, una pieza digital."
+conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
+image = "https://animaargenta.com/nfts/aa-1965-01/front.jpg"
+is_asset_anchored = false
+display_decimals = 0
+
+[[CURRENCIES]]
+code = "AA198001"
+issuer = "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ"
+name = "Bajo el escudo"
+desc = "500 lire de Ciudad del Vaticano de 1980, segundo año del pontificado de Juan Pablo II. Una moneda física, una pieza digital."
+conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
+image = "https://animaargenta.com/nfts/aa-1980-01/front.jpg"
+is_asset_anchored = false
+display_decimals = 0
+
 [DOCUMENTATION]
 ORG_NAME = "Anima Argenta"
 ORG_URL = "https://animaargenta.com"
