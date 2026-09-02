@@ -19,6 +19,6 @@
     "postcss-cli": "^9.0.0",
     "rollup": "^3.0.0",
     "html-minifier": "^4.0.0",
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^5.0.0"
   }
 }
