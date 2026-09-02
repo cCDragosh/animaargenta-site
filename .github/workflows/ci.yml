@@ -24,3 +24,13 @@ jobs:
 
     - name: Verificar build
       run: npm run build
+
+    - name: Generar XDR de los cinco NFT pendientes
+      run: npm run nft:preview -- batches/belgica-1960.batch.json --xdr
+
+    - name: Guardar XDR sin firmar
+      uses: actions/upload-artifact@v4
+      with:
+        name: anima-argenta-mint-xdr
+        path: batch-preview/lote-plata-01/*.xdr
+        retention-days: 1
