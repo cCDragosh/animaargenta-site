@@ -3,7 +3,7 @@ VERSION = "2.0.0"
 [[CURRENCIES]]
 code = "BOLIVAR1936"
 issuer = "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ"
-name = "BOLÍVAR 1936"
+name = "1 Bolívar 1936"
 desc = """Esta pieza fue tokenizada por un humano llamado Drago.
 Un buscador de significado que convirtió el metal en memoria,
 y lo intangible en símbolo.
@@ -28,7 +28,7 @@ policy = "soberano"
 [[CURRENCIES]]
 code = "AA196501"
 issuer = "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ"
-name = "Los tres reinos"
+name = "500 Lire 1965 – Dante Alighieri"
 desc = "500 lire de Italia de 1965 dedicada al VII centenario del nacimiento de Dante Alighieri. Una moneda física, una pieza digital."
 conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1965-01/front.jpg"
@@ -40,7 +40,7 @@ status = "live"
 [[CURRENCIES]]
 code = "AA198001"
 issuer = "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ"
-name = "Bajo el escudo"
+name = "500 Lire 1980 – Giovanni Paolo II"
 desc = "500 lire de Ciudad del Vaticano de 1980, segundo año del pontificado de Juan Pablo II. Una moneda física, una pieza digital."
 conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1980-01/front.jpg"
@@ -52,7 +52,7 @@ status = "live"
 [[CURRENCIES]]
 code = "AA196001"
 issuer = "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ"
-name = "Dos nombres, una fecha"
+name = "50 Francs 1960 – Baudouin et Fabiola"
 desc = "Ejemplar físico de 50 francos belgas de 1960, emisión conmemorativa del matrimonio del rey Balduino y Fabiola de Mora y Aragón. Acuñada en plata de ley 0,835, con un peso oficial de 12,5 g y un diámetro de 30 mm."
 conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1960-01/front.jpg"
@@ -62,7 +62,7 @@ display_decimals = 0
 [[CURRENCIES]]
 code = "AA188101"
 issuer = "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ"
-name = "Tres veces FERT"
+name = "2 Lire 1881 – Umberto I"
 desc = "Ejemplar físico de 2 lire italianas de 1881, reinado de Umberto I, acuñado en Roma en plata de ley 0,835. Peso oficial de 10 g, diámetro de 27 mm y canto inscrito con FERT repetido tres veces."
 conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1881-01/front.jpg"
@@ -72,7 +72,7 @@ display_decimals = 0
 [[CURRENCIES]]
 code = "AA194401"
 issuer = "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ"
-name = "Nada sin Dios"
+name = "500 Lei 1944 – Mihai I"
 desc = "Ejemplar físico de 500 lei rumanos de 1944, reinado de Mihai I, acuñado en Bucarest en plata de ley 0,700. Peso oficial de 12 g, diámetro de 32 mm y canto inscrito NIHIL SINE DEO."
 conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1944-01/front.jpg"
@@ -82,7 +82,7 @@ display_decimals = 0
 [[CURRENCIES]]
 code = "AA188701"
 issuer = "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ"
-name = "La promesa en el canto"
+name = "1 Lira 1887 – Umberto I"
 desc = "Ejemplar físico de 1 lira italiana de 1887, reinado de Umberto I, acuñado en Milán en plata de ley 0,835. Peso oficial de 5 g, diámetro de 23 mm y canto inscrito con FERT."
 conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1887-01/front.jpg"
@@ -92,7 +92,7 @@ display_decimals = 0
 [[CURRENCIES]]
 code = "AA180701"
 issuer = "GDHWACVGTT2W467AYCGYI3PVBXSA6QBJTGMA3QCRGUUQS5ZKR5PUPYGZ"
-name = "Un reino recién nacido"
+name = "6 Kreuzer 1807 – Maximilian I. Joseph"
 desc = "Ejemplar físico de 6 kreuzer de Baviera de 1807, reinado de Maximiliano I José. Acuñado en billón de ley 0,333, con un peso oficial de 2,7 g y un diámetro de 21 mm."
 conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1807-01/front.jpg"
