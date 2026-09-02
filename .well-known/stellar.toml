@@ -58,6 +58,8 @@ conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1960-01/front.jpg"
 is_asset_anchored = false
 display_decimals = 0
+fixed_number = 1
+status = "live"
 
 [[CURRENCIES]]
 code = "AA188101"
@@ -68,6 +70,8 @@ conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1881-01/front.jpg"
 is_asset_anchored = false
 display_decimals = 0
+fixed_number = 1
+status = "live"
 
 [[CURRENCIES]]
 code = "AA194401"
@@ -78,6 +82,8 @@ conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1944-01/front.jpg"
 is_asset_anchored = false
 display_decimals = 0
+fixed_number = 1
+status = "live"
 
 [[CURRENCIES]]
 code = "AA188701"
@@ -88,6 +94,8 @@ conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1887-01/front.jpg"
 is_asset_anchored = false
 display_decimals = 0
+fixed_number = 1
+status = "live"
 
 [[CURRENCIES]]
 code = "AA180701"
@@ -98,6 +106,8 @@ conditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."
 image = "https://animaargenta.com/nfts/aa-1807-01/front.jpg"
 is_asset_anchored = false
 display_decimals = 0
+fixed_number = 1
+status = "live"
 
 [[CURRENCIES]]
 code = "ITALICUM1918"
