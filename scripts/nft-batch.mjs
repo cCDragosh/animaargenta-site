@@ -52,8 +52,8 @@ for (const [index, item] of items.entries()) {
   fail(assetCodePattern.test(item.asset_code ?? ''), `${label}: asset_code debe tener 1–12 caracteres A-Z/0-9.`);
   fail(!seenCodes.has(item.asset_code), `${label}: asset_code repetido en el lote.`);
   fail(!seenSlugs.has(item.slug), `${label}: slug repetido en el lote.`);
-  fail(!stellarToml.includes(`code = "${item.asset_code}"`), `${label}: asset_code ya publicado.`);
-  fail(!existingGallery.some((entry) => entry.id === item.slug), `${label}: slug ya publicado.`);
+  fail(withXdr || !stellarToml.includes(`code = "${item.asset_code}"`), `${label}: asset_code ya publicado.`);
+  fail(withXdr || !existingGallery.some((entry) => entry.id === item.slug), `${label}: slug ya publicado.`);
   for (const field of ['title', 'country', 'denomination', 'story', 'description', 'front_alt', 'back_alt']) {
     fail(typeof item[field] === 'string' && item[field].trim(), `${label}: falta ${field}.`);
   }
