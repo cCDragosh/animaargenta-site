@@ -12,7 +12,7 @@
   "image_back": "https://animaargenta.com/nfts/aa-1944-01/back.jpg",
   "image_edge": "https://animaargenta.com/nfts/aa-1944-01/edge.jpg",
   "edition": "1/1 (this physical object)",
-  "token_status": "Prepared; pending on-chain verification",
+  "token_status": "Live; verified on Stellar",
   "created_by": "Drago",
   "sealed_by": "Anima Argenta",
   "tags": [
