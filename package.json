@@ -15,7 +15,7 @@
     "full": "npm install && npm run build && npm run deploy:full"
   },
   "devDependencies": {
-    "@stellar/stellar-sdk": "13.3.0",
+    "@stellar/stellar-sdk": "17.0.1",
     "postcss-cli": "^9.0.0",
     "rollup": "^3.0.0",
     "html-minifier": "^4.0.0",
