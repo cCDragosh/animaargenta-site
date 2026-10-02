@@ -177,17 +177,20 @@ writeFileSync(join(outputDir, 'stellar-plan.json'), `${JSON.stringify(stellarPla
 writeFileSync(join(outputDir, 'changes.json'), `${JSON.stringify({ mode: apply ? 'apply' : 'preview', files: previewFiles }, null, 2)}\n`);
 
 if (withXdr) {
-  const { Account, Asset, BASE_FEE, Networks, Operation, TransactionBuilder } = await import('@stellar/stellar-sdk');
+  const { Asset, BASE_FEE, Networks, Operation, TransactionBuilder, rpc } = await import('@stellar/stellar-sdk');
+  const rpcServer = new rpc.Server('https://mainnet.sorobanrpc.com');
   const load = async (account) => {
-    const response = await fetch(`https://horizon.stellar.org/accounts/${account}`);
-    if (!response.ok) throw new Error(`No se pudo cargar ${account} desde Horizon.`);
-    return response.json();
+    try {
+      return await rpcServer.getAccount(account);
+    } catch (error) {
+      throw new Error(`No se pudo cargar ${account} desde Stellar RPC.`, { cause: error });
+    }
   };
   const [receiverAccount, issuerAccount] = await Promise.all([load(receiver), load(issuer)]);
-  const trustBuilder = new TransactionBuilder(new Account(receiver, receiverAccount.sequence), { fee: BASE_FEE, networkPassphrase: Networks.PUBLIC });
+  const trustBuilder = new TransactionBuilder(receiverAccount, { fee: BASE_FEE, networkPassphrase: Networks.PUBLIC });
   for (const item of items) trustBuilder.addOperation(Operation.changeTrust({ asset: new Asset(item.asset_code, issuer), limit: '1' }));
   const trustTx = trustBuilder.setTimeout(86400).build();
-  const mintBuilder = new TransactionBuilder(new Account(issuer, issuerAccount.sequence), { fee: BASE_FEE, networkPassphrase: Networks.PUBLIC });
+  const mintBuilder = new TransactionBuilder(issuerAccount, { fee: BASE_FEE, networkPassphrase: Networks.PUBLIC });
   for (const item of items) {
     const asset = new Asset(item.asset_code, issuer);
     mintBuilder.addOperation(Operation.setTrustLineFlags({ trustor: receiver, asset, flags: { authorized: true } }));
