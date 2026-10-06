@@ -15,10 +15,10 @@
     "full": "npm install && npm run build && npm run deploy:full"
   },
   "devDependencies": {
-    "@stellar/stellar-sdk": "17.0.1",
-    "postcss-cli": "^9.0.0",
-    "rollup": "^3.0.0",
+    "@stellar/stellar-sdk": "17.2.1",
+    "gh-pages": "^5.0.0",
     "html-minifier": "^4.0.0",
-    "gh-pages": "^5.0.0"
+    "postcss-cli": "^9.0.0",
+    "rollup": "^3.0.0"
   }
 }
