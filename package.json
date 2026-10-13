@@ -9,10 +9,11 @@
     "build:js": "rollup js/scripts.js --file dist/js/bundle.js --format iife",
     "minify:html": "html-minifier index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true -o dist/index.html",
     "copy:static": "cp -R data favicons gallery nfts pictogramas .well-known dist/ && cp CNAME robots.txt sitemap.xml .nojekyll dist/",
-    "build": "npm run verify:visual && rm -rf dist && npm run build:css && npm run build:js && npm run minify:html && npm run copy:static",
+    "build": "npm run verify:visual && npm run verify:seo && rm -rf dist && npm run build:css && npm run build:js && npm run minify:html && npm run copy:static",
     "deploy": "gh-pages -d dist",
     "deploy:full": "npm run build && npm run deploy",
-    "full": "npm install && npm run build && npm run deploy:full"
+    "full": "npm install && npm run build && npm run deploy:full",
+    "verify:seo": "node scripts/check-seo.mjs"
   },
   "devDependencies": {
     "@stellar/stellar-sdk": "17.2.1",
