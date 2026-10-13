@@ -7,7 +7,7 @@
     "verify:visual": "node scripts/check-visual-contract.mjs",
     "build:css": "postcss css/*.css -d dist/css --no-map --env production",
     "build:js": "rollup js/scripts.js --file dist/js/bundle.js --format iife",
-    "minify:html": "html-minifier index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true -o dist/index.html",
+    "minify:html": "html-minifier-terser index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true -o dist/index.html",
     "copy:static": "cp -R data favicons gallery nfts pictogramas .well-known dist/ && cp CNAME robots.txt sitemap.xml .nojekyll dist/",
     "build": "npm run verify:visual && npm run verify:seo && rm -rf dist && npm run build:css && npm run build:js && npm run minify:html && npm run copy:static",
     "deploy": "gh-pages -d dist",
@@ -18,8 +18,11 @@
   "devDependencies": {
     "@stellar/stellar-sdk": "17.2.1",
     "gh-pages": "^5.0.0",
-    "html-minifier": "^4.0.0",
-    "postcss-cli": "^9.0.0",
-    "rollup": "^3.0.0"
+    "postcss-cli": "12.0.0",
+    "rollup": "^3.0.0",
+    "html-minifier-terser": "7.2.0"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
