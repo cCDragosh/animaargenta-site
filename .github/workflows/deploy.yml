@@ -23,10 +23,10 @@ jobs:
     - name: Instalar Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'
+        node-version: '22'
 
     - name: Instalar dependencias
-      run: npm install
+      run: npm ci
 
     - name: Crear build
       run: npm run build
