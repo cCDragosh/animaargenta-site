@@ -16,3 +16,5 @@
    `npm run nft:apply -- batches/<lote>.batch.json`
 
 La herramienta nunca firma ni envía transacciones. `--apply` solo puede crear fichas NFT y actualizar `data/nfts.json`, `.well-known/stellar.toml` y `sitemap.xml`.
+
+La cuenta emisora permanece operativa para autorizar futuras transferencias. El generador publica cada pieza como edición declarada 1/1, sin afirmar que la oferta esté bloqueada técnicamente. Ejecutar `npm run verify:stellar-policy` antes de publicar.

@@ -12,11 +12,16 @@ Aquí se exponen NFTs únicos creados a partir de monedas reales encontradas, re
 - `data/`: Metadatos en formato `.json` y `.toml`
 - `css/`, `js/`: Estilos y scripts del sitio
 - `.well-known/stellar.toml`: Identidad y metadatos para Stellar
+- `docs/stellar-asset-policy.md`: Política de emisión, transferencias y seguridad Stellar
 - `CNAME`: Dominio personalizado vinculado a GitHub Pages
 
 ## 🌐 Ver en línea
 
 > https://ccdragosh.github.io/animaargenta-site/
+
+## 🔐 Política Stellar
+
+Los activos se publican como ediciones declaradas 1/1. La cuenta emisora permanece operativa para autorizar futuras trustlines y transferencias; por ello el proyecto no afirma que la oferta esté bloqueada criptográficamente. La compilación ejecuta `npm run verify:stellar-policy` para mantener esta descripción coherente.
 
 ## 🧬 Filosofía
 

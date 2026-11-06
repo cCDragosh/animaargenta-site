@@ -122,7 +122,7 @@ const renderPage = (item) => `<!DOCTYPE html>
       ${item.facts.map(({ label, value }) => `<dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd>`).join('\n      ')}
       <dt>Estado digital</dt><dd>${apply ? 'Publicado; pendiente de verificación en cadena' : 'Vista previa; aún no publicado'}</dd>
     </dl>
-    <p class="seal">Una moneda física = una pieza digital. Emisión: 1. Sin reemisión.</p>
+    <p class="seal">Una moneda física = una pieza digital. Edición declarada: 1/1.</p>
   </main>
 </body>
 </html>
@@ -219,7 +219,7 @@ if (apply) {
     });
   }
   writeFileSync(join(ROOT, 'data/nfts.json'), `${JSON.stringify(existingGallery, null, 2)}\n`);
-  const currencyBlocks = items.map((item) => `\n[[CURRENCIES]]\ncode = ${tomlString(item.asset_code)}\nissuer = ${tomlString(issuer)}\nname = ${tomlString(item.title)}\ndesc = ${tomlString(item.description)}\nconditions = "NFT único. Emisión fijada en 1 unidad. No se reemitirá."\nimage = ${tomlString(`https://animaargenta.com/nfts/${item.slug}/front${extname(item.images.front).toLowerCase()}`)}\nis_asset_anchored = false\ndisplay_decimals = 0\n`).join('');
+  const currencyBlocks = items.map((item) => `\n[[CURRENCIES]]\ncode = ${tomlString(item.asset_code)}\nissuer = ${tomlString(issuer)}\nname = ${tomlString(item.title)}\ndesc = ${tomlString(item.description)}\nconditions = "Edición declarada 1/1. El emisor permanece operativo para autorizar futuras transferencias."\nimage = ${tomlString(`https://animaargenta.com/nfts/${item.slug}/front${extname(item.images.front).toLowerCase()}`)}\nis_asset_anchored = false\ndisplay_decimals = 0\n`).join('');
   writeFileSync(join(ROOT, '.well-known/stellar.toml'), stellarToml.replace('\n[DOCUMENTATION]', `${currencyBlocks}\n[DOCUMENTATION]`));
   const sitemap = readFileSync(join(ROOT, 'sitemap.xml'), 'utf8');
   const urls = items.map((item) => `  <url>\n    <loc>https://animaargenta.com/nfts/${item.slug}/</loc>\n    <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod>\n    <priority>0.8</priority>\n  </url>\n`).join('');
